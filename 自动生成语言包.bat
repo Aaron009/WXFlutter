@@ -1,0 +1,1 @@
+C:\Python27\python.exe ./python_tool/auto_generate_language.py

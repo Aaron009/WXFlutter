@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wxfluuter/Iconfont.dart';
 import 'package:wxfluuter/view/NavigatorUtils.dart';
 import 'package:wxfluuter/widget/FlexButton.dart';
 import 'package:wxfluuter/widget/InputWidget.dart';
+import 'package:wxfluuter/index.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -77,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             Padding(padding: new EdgeInsets.only(top:5.0)),
                             RaisedButton(
-                              color: Colors.blue,
+                              color: Theme.of(context).primaryColor,
                               padding: new EdgeInsets.only(
                                   left: 20.0, top: 10.0, right: 20.0, bottom: 10.0),
                               child: Flex(
@@ -90,6 +92,15 @@ class _LoginPageState extends State<LoginPage> {
                               onPressed: pressRegister,
                             ),
                             Padding(padding: new EdgeInsets.only(top:30.0)),
+                            InkWell(
+                              onTap: () {
+                                NavigatorUtils.goView(NavigatorUtils.language);
+                              },
+                              child: Text(
+                                AppStrings.of(context).switchLanguage,
+                              ),
+                            ),
+                            new Padding(padding: new EdgeInsets.all(15.0)),
                           ],
                       ),
                     ),
@@ -109,5 +120,8 @@ class _LoginPageState extends State<LoginPage> {
 
   void pressRegister() {
     print('注册 $_userName  $_password');
+
+    ThemeModel themeMode = Provider.of<ThemeModel>(NavigatorUtils.currentContext);
+    themeMode.changeTheme();
   }
 }

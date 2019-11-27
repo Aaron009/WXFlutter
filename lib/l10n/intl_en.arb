@@ -1,0 +1,33 @@
+{
+  "@@last_modified": "2019-11-27T21:30:20.620154",
+  "title": "Localization Demo",
+  "@title": {
+    "description": "应用标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "click": "Click",
+  "@click": {
+    "description": "点击",
+    "type": "text",
+    "placeholders": {}
+  },
+  "helloFromDemo": "Hello~",
+  "@helloFromDemo": {
+    "description": "一句问候",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "Language",
+  "@language": {
+    "description": "语言",
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchLanguage": "Switch Language",
+  "@switchLanguage": {
+    "description": "切换语言",
+    "type": "text",
+    "placeholders": {}
+  }
+}

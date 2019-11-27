@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wxfluuter/view/LanguagePage.dart';
 import 'package:wxfluuter/view/home/HomePage.dart';
 import 'package:wxfluuter/view/LoginPage.dart';
 import 'package:wxfluuter/view/WelcomePage.dart';
@@ -11,6 +12,7 @@ class NavigatorUtils {
   static const String login = "login";
   /// 主页
   static const String home = "home";
+  static const String language = "language";
 
   static var currentContext;
 
@@ -19,6 +21,7 @@ class NavigatorUtils {
         welcome: NavigatorHandler(routeName: welcome).execute,
         login: NavigatorHandler(routeName: login).execute,
         home: NavigatorHandler(routeName: home).execute,
+        language: NavigatorHandler(routeName: language).execute,
       };
   }
 
@@ -32,6 +35,8 @@ class NavigatorUtils {
           return LoginPage();
       case home:
           return HomePage();
+      case language:
+        return LanguagePage();
     }
   }
 
@@ -41,7 +46,8 @@ class NavigatorUtils {
   }
 
   static goView(String routeName) {
-    Navigator.pushReplacementNamed(currentContext, routeName);
+//    Navigator.pushReplacementNamed(currentContext, routeName);
+    Navigator.pushNamed(currentContext, routeName);
   }
 }
 

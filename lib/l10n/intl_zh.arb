@@ -1,0 +1,33 @@
+{
+  "@@last_modified": "2019-11-27T21:30:20.620154",
+  "title": "应用标题",
+  "@title": {
+    "description": "应用标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "click": "点击",
+  "@click": {
+    "description": "点击",
+    "type": "text",
+    "placeholders": {}
+  },
+  "helloFromDemo": "一句问候",
+  "@helloFromDemo": {
+    "description": "一句问候",
+    "type": "text",
+    "placeholders": {}
+  },
+  "language": "语言",
+  "@language": {
+    "description": "语言",
+    "type": "text",
+    "placeholders": {}
+  },
+  "switchLanguage": "切换语言",
+  "@switchLanguage": {
+    "description": "切换语言",
+    "type": "text",
+    "placeholders": {}
+  }
+}
