@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:wxfluuter/models/user.dart';
 import 'package:wxfluuter/utils/universal_variables.dart';
 import 'package:wxfluuter/utils/utilities.dart';
+import 'package:wxfluuter/view/chatscreens/chat_screen.dart';
 import 'package:wxfluuter/widget/appbar.dart';
 import 'package:wxfluuter/widget/custom_tile.dart';
 
@@ -86,11 +88,25 @@ class _ChatListContainerState extends State<ChatListContainer> {
     return Container(
       child: ListView.builder(
         padding: EdgeInsets.all(10),
-        itemCount: 2,
+        itemCount: 4,
         itemBuilder: (context, index) {
+
+          User searchedUser = User(
+            uid: '1',
+            profilePhoto: 'suggestionList[index].profilePhoto',
+            name: 'suggestionList[index].name',
+            username: 'suggestionList[index].username');
+            
           return CustomTile(
             mini: false,
-            onTap: () {},
+            onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ChatScreen(
+                          receiver: searchedUser,
+                        )));
+          },
             title: Text(
               "The CS Guy",
               style: TextStyle(

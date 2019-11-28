@@ -30,12 +30,8 @@ class NavigatorUtils {
       case welcome:
         return WelcomePage();
       case login:
-<<<<<<< HEAD
           return LoginScreen();
           // return LoginPage();
-=======
-        return LoginPage();
->>>>>>> 53122602def4cdbf0faa02dd266160a1b5b8f1d4
       case home:
         return HomePage();
       case language:
