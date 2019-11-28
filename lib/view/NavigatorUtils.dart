@@ -3,6 +3,7 @@ import 'package:wxfluuter/view/LanguagePage.dart';
 import 'package:wxfluuter/view/home/HomePage.dart';
 import 'package:wxfluuter/view/LoginPage.dart';
 import 'package:wxfluuter/view/WelcomePage.dart';
+import 'package:wxfluuter/view/login_screen.dart';
 
 class NavigatorUtils {
 
@@ -32,7 +33,8 @@ class NavigatorUtils {
       case welcome:
           return WelcomePage();
       case login:
-          return LoginPage();
+          return LoginScreen();
+          // return LoginPage();
       case home:
           return HomePage();
       case language:
