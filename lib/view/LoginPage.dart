@@ -20,9 +20,16 @@ class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
     super.initState();
-
     userController.text = "1111111";
     pwController.text = "22222";
+  }
+
+
+  @override
+  void dispose() {
+    super.dispose();
+    userController.dispose();
+    pwController.dispose();
   }
 
   @override
