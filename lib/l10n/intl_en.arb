@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2019-11-27T21:30:20.620154",
+  "@@last_modified": "2019-11-28T10:29:36.326099",
   "title": "Localization Demo",
   "@title": {
     "description": "应用标题",
@@ -27,6 +27,30 @@
   "switchLanguage": "Switch Language",
   "@switchLanguage": {
     "description": "切换语言",
+    "type": "text",
+    "placeholders": {}
+  },
+  "login": "Login",
+  "@login": {
+    "description": "登陆",
+    "type": "text",
+    "placeholders": {}
+  },
+  "registered": "Registered",
+  "@registered": {
+    "description": "注册",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterYourAccount": "Please enter your account",
+  "@enterYourAccount": {
+    "description": "请输入账号",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterYourPassword": "Please enter your password",
+  "@enterYourPassword": {
+    "description": "请输入密码",
     "type": "text",
     "placeholders": {}
   }

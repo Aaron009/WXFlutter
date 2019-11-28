@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2019-11-27T21:30:20.620154",
+  "@@last_modified": "2019-11-28T10:29:36.326099",
   "title": "应用标题",
   "@title": {
     "description": "应用标题",
@@ -27,6 +27,30 @@
   "switchLanguage": "切换语言",
   "@switchLanguage": {
     "description": "切换语言",
+    "type": "text",
+    "placeholders": {}
+  },
+  "login": "登陆",
+  "@login": {
+    "description": "登陆",
+    "type": "text",
+    "placeholders": {}
+  },
+  "registered": "注册",
+  "@registered": {
+    "description": "注册",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterYourAccount": "请输入账号",
+  "@enterYourAccount": {
+    "description": "请输入账号",
+    "type": "text",
+    "placeholders": {}
+  },
+  "enterYourPassword": "请输入密码",
+  "@enterYourPassword": {
+    "description": "请输入密码",
     "type": "text",
     "placeholders": {}
   }

@@ -62,4 +62,40 @@ class AppStrings {
     );
   }
 
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '登陆',
+      locale: _localeName,
+    );
+  }
+
+  String get registered {
+    return Intl.message(
+      'Registered',
+      name: 'registered',
+      desc: '注册',
+      locale: _localeName,
+    );
+  }
+
+  String get enterYourAccount {
+    return Intl.message(
+      'Please enter your account',
+      name: 'enterYourAccount',
+      desc: '请输入账号',
+      locale: _localeName,
+    );
+  }
+
+  String get enterYourPassword {
+    return Intl.message(
+      'Please enter your password',
+      name: 'enterYourPassword',
+      desc: '请输入密码',
+      locale: _localeName,
+    );
+  }
+
 }

@@ -6,50 +6,50 @@ import 'package:wxfluuter/view/WelcomePage.dart';
 import 'package:wxfluuter/view/login_screen.dart';
 
 class NavigatorUtils {
-
   /// 欢迎界面
   static const String welcome = "/";
+
   /// 登陆
   static const String login = "login";
+
   /// 主页
   static const String home = "home";
   static const String language = "language";
 
-  static var currentContext;
-
   static getRoutes(context) {
-      return {
-        welcome: NavigatorHandler(routeName: welcome).execute,
-        login: NavigatorHandler(routeName: login).execute,
-        home: NavigatorHandler(routeName: home).execute,
-        language: NavigatorHandler(routeName: language).execute,
-      };
+    return {
+      welcome: NavigatorHandler(routeName: welcome).execute,
+      login: NavigatorHandler(routeName: login).execute,
+      home: NavigatorHandler(routeName: home).execute,
+      language: NavigatorHandler(routeName: language).execute,
+    };
   }
 
   static handleRoute(routeName, content) {
-    currentContext = content;
-
-    switch(routeName) {
+    switch (routeName) {
       case welcome:
-          return WelcomePage();
+        return WelcomePage();
       case login:
+<<<<<<< HEAD
           return LoginScreen();
           // return LoginPage();
+=======
+        return LoginPage();
+>>>>>>> 53122602def4cdbf0faa02dd266160a1b5b8f1d4
       case home:
-          return HomePage();
+        return HomePage();
       case language:
         return LanguagePage();
     }
   }
 
   ///登录页
-  static goLogin() {
-    Navigator.pushReplacementNamed(currentContext, login);
+  static goLogin(content) {
+    Navigator.pushReplacementNamed(content, login);
   }
 
-  static goView(String routeName) {
-//    Navigator.pushReplacementNamed(currentContext, routeName);
-    Navigator.pushNamed(currentContext, routeName);
+  static goView(content, String routeName) {
+    Navigator.pushNamed(content, routeName);
   }
 }
 
