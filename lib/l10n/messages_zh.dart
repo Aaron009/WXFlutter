@@ -20,8 +20,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "click" : MessageLookupByLibrary.simpleMessage("点击"),
+    "enterYourAccount" : MessageLookupByLibrary.simpleMessage("请输入账号"),
+    "enterYourPassword" : MessageLookupByLibrary.simpleMessage("请输入密码"),
     "helloFromDemo" : MessageLookupByLibrary.simpleMessage("一句问候"),
     "language" : MessageLookupByLibrary.simpleMessage("语言"),
+    "login" : MessageLookupByLibrary.simpleMessage("登陆"),
+    "registered" : MessageLookupByLibrary.simpleMessage("注册"),
     "switchLanguage" : MessageLookupByLibrary.simpleMessage("切换语言"),
     "title" : MessageLookupByLibrary.simpleMessage("应用标题")
   };

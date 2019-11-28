@@ -13,7 +13,7 @@ class _WelcomePageState extends State<WelcomePage> {
     super.didChangeDependencies();
 
     new Future.delayed(const Duration(seconds: 2, milliseconds: 500), () {
-        NavigatorUtils.goLogin();
+        NavigatorUtils.goLogin(context);
     });
   }
 
